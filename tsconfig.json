@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonJS",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,        
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist",
+        "sourceMap": true,
+        "baseUrl": "./",
+        "isolatedModules": true,
+    },
+    "defaultSeverity": "error",
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+}

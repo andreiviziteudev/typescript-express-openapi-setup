@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": ["prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"],
+        "paths": ["./src"]
+      }
+    }
+  },
+  "rules": {
+    "curly": ["error", "all"],
+    "no-shadow": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptafterSingleLine": true }],
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "prettier/prettier": ["error"]
+  }
+}
