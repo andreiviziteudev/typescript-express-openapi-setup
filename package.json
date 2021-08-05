@@ -8,18 +8,22 @@
     "start": "ts-node src/index.ts",
     "start:dev": "nodemon --watch src --exec ts-node src/index.ts",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js,.ts --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:unit": "jest src/tests/ --runInBand",
+    "test:coverage": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
     "nodemon": "^2.0.7",
     "prettier": "^2.3.0",
+    "ts-jest": "^27.0.4",
     "tslint": "^6.1.3",
     "typescript": "^4.2.4"
   },
